@@ -38,4 +38,15 @@ production:
 - CREATE A MODEL - use ratModel.js as a template
 - SEED DATA using seedFile.js
 
+## TO USE KNEX MIGRATIONS
+
+_Read Knex Documentation: http://knexjs.org/#Migrations-CLI_
+
+- download the knex CLI globally `sudo npm i -g knex`
+- make a new migration file `knex migrate:make filename`
+- migrate to the target database based on NODE_ENV
+  `NODE_ENV=development knex migrate:latest`
+  `NODE_ENV=staging knex migrate:latest`
+  `NODE_ENV=production knex migrate:latest`
+
 MAKE SURE TO JOIN THE SLACK AND DISCORD COMMUNITIES AT DEVNURSERY.COM
