@@ -1,7 +1,7 @@
 ///////////////////////////
 // Environmental Variables
 ///////////////////////////
-require("../envfunc")("env.yaml", "../env.yaml");
+require("../envfunc")();
 
 ///////////////////////////////////
 //Initialize Objection
